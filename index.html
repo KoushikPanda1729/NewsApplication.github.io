@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image.jpg" type="image/x-icon">
+    <script src="index.js" defer></script>
+    <title>News App</title>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a class="company-logo" id="reload" href="#">
+                <img src="image.jpg" alt="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="coding" onclick="onNavClick('coding')">coding</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavClick('finance')">finance</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavClick('technology')">technology</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input  type="text" id="search-text" class="news-input" placeholder="eg. technology" name="" id="">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400X200" id="news-img" alt="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End Gaget 28/09/2023</h6>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic blanditiis nemo possimus ex
+                    optio minus at architecto ipsam velit.
+                </p>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
